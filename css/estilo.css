@@ -5,12 +5,16 @@
 }
 
 h1{
-    color: black;
-    font-size: 60px;
+    color: rgb(56, 75, 56);
+    font-size: 100px;
+    font-weight: 600;
+    font-weight: bold;
 }
 
 h2{
-    color: black;
+    color: rgb(56, 75, 56);
+    font-family: 'EB Garamond', serif;
+
 }
 
 
@@ -18,10 +22,9 @@ h2{
     width: 100%;
     height: 100vh;
     margin: 0 auto;
-    font-family: 'EB Garamond', serif;
-    /*font-family: 'Itim', cursive;*/
-    font-family: 'Montserrat', sans-serif;
-    /*font-family: 'Rancho', cursive;*/
+  
+    font-family: 'Mynerve', cursive;
+
     display: grid;
     grid-template-columns: 1f;
     grid-template-rows: auto 3fr auto;
@@ -36,8 +39,8 @@ h2{
       
 .Header { 
     grid-area: Header; 
-    background-color: rgb(210, 211, 214);
-    padding: 1.2rem;
+    background-color: rgb(245, 242, 242);
+    padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,15 +58,19 @@ h2{
 .Header nav ul{ /* el ul es el padre de todos los list items*/
     list-style-type: none;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-    padding: 0.7rem ;
+    padding: 0.5rem ;
+    margin-right: 50px;
+    
 }
 
 .Header nav ul a{
-    color:rgb(6, 6, 6);
+    color: rgb(56, 75, 56);
     text-decoration: none;
-    padding: 0.7rem;
+    font-size: 20px;
+    padding: 1rem;
+    font-family: 'EB Garamond', serif;
+
 }
 
 nav li a:hover{
@@ -78,14 +85,14 @@ nav li a:hover{
 .Main { 
     width: 100%;
     height: 100%;
-    background-image: url(../fondos/fondohome.png);
+    background-image: url(../fondos/fondo1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
     grid-area: Main; 
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 0.3fr 1.2fr;
+    grid-template-rows: 1.2fr 0.4fr 1.2fr;
     row-gap: 5px;
 
     justify-content: center;
@@ -104,31 +111,47 @@ nav li a:hover{
 
   
 .frase { 
+    font-size: 17px;
     grid-area: frase; 
     align-self: center;
     justify-self: center;
+}
+
+.frase h2{
+    color: rgb(56, 75, 56);
+    
+    font-family: 'EB Garamond', serif;
+    /*font-family: 'Itim', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Mynerve', cursive;
+    font-family: 'Rancho', cursive;*/
 }
   
 .boton { 
     grid-area: boton; 
     align-self:baseline;
     justify-content: center;
-
     align-self: baseline;
     justify-self: center;
-    font-size: 20px;
 }
 
 .boton button{
     padding: 15px;
     background-color: none;
-    border-color: black;
-    font-size: 20px;
-    font-style: normal;
-    border-radius: 10px;
+    border-color: rgb(56, 75, 56);
     background-color: none;
 }
-  
+
+a:link{
+    text-decoration: none;
+}
+
+.boton button a h2{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'EB Garamond', serif;
+    color: rgb(56, 75, 56);
+}
 
 
       
