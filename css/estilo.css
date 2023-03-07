@@ -47,11 +47,10 @@ h2{
 }
 
 .Header img{
-    width: 60px;
-    border-radius: 20%;
-    /*padding: 5px;
-    margin: auto;
-    margin-left: 30px;*/
+    width: 65px;
+    border-radius: 50%;
+
+    margin-left: 40px;
     align-self: center;
 }
 
@@ -60,6 +59,7 @@ h2{
     display: flex;
     align-items: center;
     padding: 0.5rem ;
+    margin-top: 10px;
     margin-right: 50px;
     
 }
@@ -158,11 +158,15 @@ a:link{
 
 /*  PARTIR DE ACA HTML DE RECETAS*/   /*PONERLE FONT A LA APGINA DE RECETAS*/
 .containerRecetas {  
+    background-image: url(../fondos/texturaclara.jpg);
+    font-family: 'Mynerve', cursive;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 0.7fr 2fr;
+    grid-template-rows: auto auto 1fr;
     grid-auto-flow: row;
     grid-template-areas:
       "Header"
@@ -171,32 +175,32 @@ a:link{
     justify-content: center;
   }
 
+.containerRecetas nav ul a{
+    color: rgb(94, 94, 94);
+}
+
 .tituloR { 
-    margin-top: 100px;
-    margin-bottom: 50px;
+    margin-top: 80px;
+    margin-bottom: 30px;
     grid-area: tituloR; 
     justify-self: center;
     align-self: flex-end;
-    border: 2px black solid;
+
 }
 
 .tituloR h1{
     font-size: 50px;
     font-weight: normal;
+    color: rgb(94, 94, 94);
+    font-family: 'Mynerve', cursive;
 }
   
 .MainR { 
     width: 100%;
     height: 100%;
     grid-area: MainR; 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-auto-columns: 1fr;
-    column-gap: 5px;
+    display: flex;
     grid-auto-flow: row;
-    grid-template-areas:
-    "entradas platos snacks postresydulces";
     justify-items: center;
     align-content: center;
     align-items: flex-start;
@@ -212,34 +216,32 @@ a:link{
     flex-direction: row;
     flex-direction: column;
     margin: 1rem;
-    border: 2px grey solid;
+    
 
 }
-
-.MainR img{
-    height: 250px;
-    width: 150px;
+.card{
+    background-color: rgb(64, 85, 64);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 
-.entradas { 
-    grid-area: entradas; 
-}
 
-.platos { 
-    grid-area: platos; 
-}
-  
-.snacks { 
-    grid-area: snacks; 
-}
-  
-.postresydulces { 
-    grid-area: postresydulces; 
-}
+.card btn{
+    width: max-content;
+    display: flex;
+    border: none;
+    margin-top: 12px;
+    align-items: end;
 
-  
+}
+    
   
 
+.TituloN h1{
+    font-size: 40px;
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+    padding: 30px;
+}
