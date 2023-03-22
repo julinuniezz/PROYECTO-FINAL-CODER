@@ -1,247 +1,216 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
 
-h1{
-    color: rgb(56, 75, 56);
-    font-size: 100px;
-    font-weight: 600;
-    font-weight: bold;
-}
+h1 {
+  color: #384b38;
+  font-size: 100px;
+  font-weight: 600;
+  font-weight: bold; }
 
-h2{
-    color: rgb(56, 75, 56);
-    font-family: 'EB Garamond', serif;
+h2 {
+  color: #384b38;
+  font-family: 'EB Garamond', serif; }
 
-}
+.containerInicio {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  font-family: 'Mynerve', cursive;
+  display: grid;
+  grid-template-columns: 1f;
+  grid-template-rows: auto 3fr auto;
+  grid-auto-flow: row;
+  grid-template-areas: "Header" "Main" "Footer"; }
 
-
-.containerInicio{
-    width: 100%;
-    height: 100vh;
-    margin: 0 auto;
-  
-    font-family: 'Mynerve', cursive;
-
-    display: grid;
-    grid-template-columns: 1f;
-    grid-template-rows: auto 3fr auto;
-    grid-auto-flow: row;
-    grid-template-areas:
-    "Header"
-    "Main"
-    "Footer";
-}
-
-
-      
-.Header { 
-    grid-area: Header; 
-    background-color: rgb(245, 242, 242);
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.Header img{
+.Header {
+  grid-area: Header;
+  width: 100%;
+  background-color: #f5f2f2;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .Header .logo {
     width: 65px;
     border-radius: 50%;
-
     margin-left: 40px;
-    align-self: center;
-}
-
-.Header nav ul{ /* el ul es el padre de todos los list items*/
-    list-style-type: none;
+    align-self: center; }
+  .Header .nav__menu {
     display: flex;
-    align-items: center;
-    padding: 0.5rem ;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding: 0.5rem;
     margin-top: 10px;
-    margin-right: 50px;
-    
-}
+    margin-right: 50px; }
+    .Header .nav__menu .nav__li a {
+      color: #384b38;
+      text-decoration: none;
+      font-size: 20px;
+      padding: 1rem;
+      font-family: 'EB Garamond', serif; }
+      .Header .nav__menu .nav__li a:hover {
+        background-color: rgba(220, 221, 211, 0.726);
+        color: #090909;
+        border-radius: 20px; }
 
-.Header nav ul a{
-    color: rgb(56, 75, 56);
-    text-decoration: none;
-    font-size: 20px;
-    padding: 1rem;
-    font-family: 'EB Garamond', serif;
-
-}
-
-nav li a:hover{
-    background-color: rgba(220, 221, 211, 0.726);
-    color: rgb(9, 9, 9);
-    border-radius: 20px;
-}
-
-
-
-
-.Main { 
-    width: 100%;
-    height: 100%;
-    background-image: url(../fondos/fondo1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    grid-area: Main; 
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1.2fr 0.4fr 1.2fr;
-    row-gap: 5px;
-
-    justify-content: center;
-    grid-template-areas: 
-    "titulo"
-    "frase"
-    "boton";
-}  
-
-  
-.titulo { 
-    grid-area: titulo; 
+.main {
+  width: 100%;
+  height: 100%;
+  background-image: url(../fondos/fondo1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-area: Main;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.2fr 0.4fr 1.2fr;
+  row-gap: 5px;
+  justify-content: center;
+  grid-template-areas: "titulo" "frase" "boton"; }
+  .main .main__titulo {
+    grid-area: titulo;
     justify-self: center;
-    align-self: end;
-}
-
-  
-.frase { 
+    align-self: end; }
+  .main .main__frase {
     font-size: 17px;
-    grid-area: frase; 
+    grid-area: frase;
     align-self: center;
-    justify-self: center;
-}
-
-.frase h2{
-    color: rgb(56, 75, 56);
-    
-    font-family: 'EB Garamond', serif;
-    /*font-family: 'Itim', cursive;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Mynerve', cursive;
-    font-family: 'Rancho', cursive;*/
-}
-  
-.boton { 
-    grid-area: boton; 
-    align-self:baseline;
+    justify-self: center; }
+    .main .main__frase h2 {
+      color: #384b38;
+      font-family: 'EB Garamond', serif;
+      /*font-family: 'Itim', cursive;
+            font-family: 'Montserrat', sans-serif;
+            font-family: 'Mynerve', cursive;
+            font-family: 'Rancho', cursive;*/ }
+  .main .main__boton {
+    grid-area: boton;
+    align-self: baseline;
     justify-content: center;
     align-self: baseline;
-    justify-self: center;
+    justify-self: center; }
+    .main .main__boton button {
+      padding: 15px;
+      background-color: none;
+      border-color: #384b38;
+      background-color: none; }
+      .main .main__boton button a:link {
+        text-decoration: none; }
+        .main .main__boton button a:link h2 {
+          font-size: 20px;
+          font-weight: bold;
+          font-family: 'EB Garamond', serif;
+          color: #384b38; }
+
+/*  PARTIR DE ACA HTML DE RECETAS*/
+/*PONERLE FONT A LA APGINA DE RECETAS*/
+.containerPlatos {
+  font-family: 'Mynerve', cursive;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr;
+  grid-auto-flow: row;
+  justify-content: center;
+  grid-template-areas: "Header" "tituloPlatos" "MainPlatos"; }
+
+.containerPlatos nav ul a {
+  color: #5e5e5e; }
+
+.tituloPlatos {
+  margin-top: 80px;
+  margin-bottom: 30px;
+  grid-area: tituloPlatos;
+  justify-content: center;
+  align-self: flex-end; }
+
+.tituloPlatos h1 {
+  justify-self: center;
+  font-size: 50px;
+  font-weight: normal;
+  color: #1b3621;
+  font-family: 'Mynerve', cursive; }
+
+.MainPlatos {
+  width: 100%;
+  padding: 20px;
+  height: 100%;
+  grid-area: MainPlatos;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: flex-start; }
+
+.MainPlatos div:not(.img) {
+  height: 350px;
+  width: 250px;
+  background-color: whitesmoke;
+  padding: .5rem;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem; }
+
+.card {
+  background-color: #405540;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.card btn {
+  width: max-content;
+  display: flex;
+  border: none;
+  margin-top: 12px;
+  align-items: end; }
+
+.TituloN h1 {
+  font-size: 40px;
+  font-family: 'EB Garamond', serif;
+  text-align: center;
+  padding: 30px; }
+
+/*
+.carousel-inner img {
+    width:80%;
+    max-height: 460px;
 }
 
-.boton button{
-    padding: 15px;
-    background-color: none;
-    border-color: rgb(56, 75, 56);
-    background-color: none;
+.carousel-inner{
+    height: 400px;
+    width: 80%;
 }
 
-a:link{
-    text-decoration: none;
-}
-
-.boton button a h2{
-    font-size: 20px;
-    font-weight: bold;
+.carousel-indicators{
+    height: 400px;
+    width: 80%;
+}*/
+.btn {
+  width: max-content;
+  border-width: 3px;
+  border-color: #6d7d6d; }
+  .btn h5 {
+    color: #6d7d6d;
     font-family: 'EB Garamond', serif;
-    color: rgb(56, 75, 56);
-}
+    font-weight: 10px; }
 
+.btn:hover {
+  background-color: #f7f8f7;
+  border-color: #6d7d6d; }
 
-      
-
-/*  PARTIR DE ACA HTML DE RECETAS*/   /*PONERLE FONT A LA APGINA DE RECETAS*/
-.containerRecetas {  
-    background-image: url(../fondos/texturaclara.jpg);
-    font-family: 'Mynerve', cursive;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto 1fr;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "Header"
-      "tituloR"
-      "MainR";
-    justify-content: center;
-  }
-
-.containerRecetas nav ul a{
-    color: rgb(94, 94, 94);
-}
-
-.tituloR { 
-    margin-top: 80px;
-    margin-bottom: 30px;
-    grid-area: tituloR; 
-    justify-self: center;
-    align-self: flex-end;
-
-}
-
-.tituloR h1{
-    font-size: 50px;
-    font-weight: normal;
-    color: rgb(94, 94, 94);
-    font-family: 'Mynerve', cursive;
-}
-  
-.MainR { 
-    width: 100%;
-    height: 100%;
-    grid-area: MainR; 
-    display: flex;
-    grid-auto-flow: row;
-    justify-items: center;
-    align-content: center;
-    align-items: flex-start;
-}   
-  
-.MainR div:not(.img){
-    
-    height: 350px;
-    width: 250px;
-    background-color: rgb(242, 238, 238);
-    padding: .5rem;
-    display: flex;
-    flex-direction: row;
-    flex-direction: column;
-    margin: 1rem;
-    
-
-}
-.card{
-    background-color: rgb(64, 85, 64);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-
-.card btn{
-    width: max-content;
-    display: flex;
-    border: none;
-    margin-top: 12px;
-    align-items: end;
-
-}
-    
-  
-
-.TituloN h1{
-    font-size: 40px;
+.botonblanco {
+  width: max-content;
+  border-width: 3px;
+  background-color: white;
+  border-color: white;
+  margin-bottom: 5px; }
+  .botonblanco h5 {
+    color: #6d7d6d;
     font-family: 'EB Garamond', serif;
-    text-align: center;
-    padding: 30px;
-}
+    font-weight: 10px; }
+
+.botonblanco:hover {
+  background-color: #f7f8f7; }
