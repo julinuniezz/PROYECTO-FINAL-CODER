@@ -179,7 +179,7 @@ h2{
 
 
 
-.containerPlatos {  
+.ContainerConCards {  
     //background-image: url(../fondos/texturaclara.jpg);
     
     font-family: 'Mynerve', cursive;
@@ -193,39 +193,43 @@ h2{
     justify-content: center;
     grid-template-areas:
       "Header"
-      "tituloPlatos"
-      "MainPlatos";
+      "tituloCards"
+      "MainConCards";
     
   }
 
-.containerPlatos nav ul a{
+.ContainerConCards nav ul a{
     color: rgb(94, 94, 94);
 }
 
-.tituloPlatos { 
+.tituloCards { 
     margin-top: 80px;
     margin-bottom: 30px;
-    grid-area: tituloPlatos;
+    grid-area: tituloCards;
     justify-content: center; 
-
-    align-self: flex-end;
+    align-items: center;
+    //align-self: flex-end;
+    h1{
+        justify-self: center;
+    }
 
 }
 
-.tituloPlatos h1{
+.tituloCards h1{
     justify-self: center;
-
+    justify-content: center;
+    align-self: center;
     font-size: 50px;
     font-weight: normal;
     color: rgb(27, 54, 33);
     font-family: 'Mynerve', cursive;
 }
   
-.MainPlatos { 
+.MainConCards{ 
     width: 100%;
     padding: 20px;
     height: 100%;
-    grid-area: MainPlatos; 
+    grid-area: MainConCards; 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -235,7 +239,7 @@ h2{
     align-items: flex-start;
 }   
   
-.MainPlatos div:not(.img){
+.MainConCards div:not(.img){
     
     height: 350px;
     width: 250px;
@@ -254,6 +258,11 @@ h2{
     align-items: center;
 }
 
+.card img{
+    height: 30px;
+    width: 250px;
+
+}
 
 
 .card btn{
@@ -335,3 +344,50 @@ h2{
 
 }
 
+
+
+//A PARTIR DE ACA LAS RECETAS
+
+.mainRecetas {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
+    gap: 3px 3px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "tituloRecetas tituloRecetas tituloRecetas"
+      "ingredientesRecetas ingredientesRecetas fotoRecetas"
+      "textoRecetas textoRecetas textoRecetas";
+  }
+  
+  .tituloRecetas { 
+    grid-area: tituloRecetas;
+    border: 2px solid black;
+
+}
+.tituloRecetas h1{
+    font-size: 20px;
+}
+
+  
+
+  .fotoRecetas { 
+    justify-content: center;
+    grid-area: fotoRecetas; 
+    width: 20%;
+    height: 500px;
+    border: 2px solid black;
+}
+
+  
+  .ingredientesRecetas { 
+    grid-area: ingredientesRecetas; 
+    border: 2px solid black;
+}
+
+  
+  .textoRecetas { 
+    grid-area: textoRecetas; 
+    border: 2px solid black;
+}
+  
