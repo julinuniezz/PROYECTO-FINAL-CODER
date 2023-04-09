@@ -128,12 +128,13 @@ h2 {
   margin-bottom: 30px;
   grid-area: tituloCards;
   justify-content: center;
+  justify-items: center;
   align-self: flex-end; 
 }
 
 .tituloCards h1 {
   width: 100%;
-  justify-self: center;
+  align-self: center;
   margin-left: 500px;
   font-size: 60px;
   font-weight: normal;
@@ -141,6 +142,42 @@ h2 {
   'EB Garamond', serif;
   }
 
+.tituloCardsEntradas{
+  width: 100%;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  grid-area: tituloCards;
+  justify-content: center;
+  justify-items: center;
+  align-self: flex-end; 
+}
+
+.tituloCardsEntradas h1{
+  margin-left: 620px;
+  font-size: 60px;
+  font-weight: normal;
+  color: #1b3621;font-family: 
+  'EB Garamond', serif;
+}
+
+.tituloCardsPostres{
+  width: 100%;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  grid-area: tituloCards;
+  justify-content: center;
+  justify-items: center;
+  align-self: flex-end; 
+}
+
+.tituloCardsPostres h1{
+  margin-left: 540px;
+  font-size: 60px;
+  justify-content: center;
+  font-weight: normal;
+  color: #1b3621;font-family: 
+  'EB Garamond', serif;
+}
 .MainConCards {
   width: 100%;
   padding: 20px;
